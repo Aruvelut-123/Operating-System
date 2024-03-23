@@ -1,6 +1,51 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmiddfkxh8lue"]
+[gd_scene load_steps=3 format=3 uid="uid://bmiddfkxh8lue"]
 
 [ext_resource type="Script" path="res://scripts/booting.gd" id="1_mt6tf"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_niqx2"]
+
 [node name="Booting" type="Node2D"]
 script = ExtResource("1_mt6tf")
+
+[node name="Display" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="BIOS Info" type="Label" parent="."]
+offset_right = 586.0
+offset_bottom = 263.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_niqx2")
+text = "Award Modular BIOS v4.50G, An Energy Star Ally
+Copyright (C) 1984-94, Award Software, Inc.
+
+#401A0-0303
+
+DX4-S CPU at 100MHz
+Memory Test :      "
+
+[node name="Memory Info" type="Label" parent="."]
+offset_left = 208.0
+offset_top = 228.0
+offset_right = 324.0
+offset_bottom = 263.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_niqx2")
+text = "0K OK"
+
+[node name="ERROR Info" type="Label" parent="."]
+offset_top = 304.0
+offset_right = 477.0
+offset_bottom = 339.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_niqx2")
+text = "Keyboard error or no keyboard present"
+
+[node name="Left Info" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 576.0
+offset_right = 492.0
+offset_bottom = 649.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_niqx2")
+text = "Press F1 to continue, DEL to enter SETUP
+10/11/94-SIS-85C471-I406SV2G-00"

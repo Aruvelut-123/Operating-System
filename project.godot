@@ -11,9 +11,20 @@ config_version=5
 [application]
 
 config/name="Operating System"
-run/main_scene="res://scences/bios.tscn"
+config/version="0.1"
+run/main_scene="res://scences/booting.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://scripts/global.gd"
+
+[display]
+
+window/size/resizable=false
 
 [editor]
 

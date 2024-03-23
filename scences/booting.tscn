@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://bmiddfkxh8lue"]
+[gd_scene load_steps=2 format=3 uid="uid://bmiddfkxh8lue"]
+
+[ext_resource type="Script" path="res://scripts/booting.gd" id="1_mt6tf"]
 
 [node name="Booting" type="Node2D"]
+script = ExtResource("1_mt6tf")
